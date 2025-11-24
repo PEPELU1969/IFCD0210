@@ -1,6 +1,6 @@
 # IFCD0210
 ## Ejercicios del curso de desarrollo web
-### [1. Introduccion al HTML](https://google.com)
+### [1. Introduccion al HTML](/IFCD0210/)
 - Uno
 - Dos
 - Tres
