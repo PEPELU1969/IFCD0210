@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes en HTML</title>
+</head>
+<body>
+    <!-- obligatorio utilizar atributo alt por usabilidad. Usar width y height puede desproporcinar la imagen. Si usamos solo width el navegador muestra proporcionalmente -->
+    <img 
+        src="Ejercicios/Imagenes/libro536x354.jpg" 
+        alt="Foto de un libro sobre mesa de madera"
+        title=""
+        width=""
+        height=""
+        loading=""> <!-- valores "eager"(por defecto, se cargan todas las fotos al inicio) "lazy"(se cargan solo las imágenes que caben en la zona visible de la página y el resto poco a poco según caben en la zona visible)-->
+
+    <img src="Ejercicios/Imagenes/leopardo.jpg" 
+        alt=""
+        width="400">
+
+    <figure> <!-- esta etiqueta sirve de contenedor para imagenes -->
+        <img src="Ejercicios/Imagenes/leopardo.jpg" 
+            alt=""
+            width="400">
+        <figcaption> <!-- etiqueta para poner texto a una imagen como pie de página-->
+            Imagende un leopardo en la sabana.
+        </figcaption>
+    </figure>
+
+    <!-- la mejor opción para accesibilidad es una etiqueta <p> con el texto antes o después de la imagen-->
+
+
+
+
+
+</body>
+</html>
