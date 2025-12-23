@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            background: #f5f5f5;
+            font-family: sans-serif;
+        }
+
+        /* Header (no Grid, no líos) */
+        .header {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Grid principal (LO IMPORTANTE) */
+        .gallery {
+            /* ACTIVAMOS GRID */
+            display: grid;
+
+            /* 3 columnas iguales */
+            grid-template-columns: repeat(3, 1fr);
+
+            /* Altura base de las filas */
+            grid-auto-rows: 200px;
+
+            /* Espacio entre tarjetas */
+            gap: 1.5rem;
+
+            /* Ancho máximo y centrado */
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        /* “Quiero 3 columnas iguales, filas automáticas de 200px y espacio entre ellas” */
+        /* Tarjetas (Flexbox dentro del Grid) */
+        .card {
+            background: white;
+            border-radius: 12px;
+
+            /* Flexbox para centrar contenido */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-weight: bold;
+        }
+
+        /* Grid coloca las tarjetas
+        Flexbox alinea lo que hay dentro
+        Variantes de tamaño (clave para entender Grid)
+        Tarjeta que ocupa 2 columnas */
+        .wide {
+            grid-column: span 2;
+        }
+
+        /* Tarjeta que ocupa 2 filas */
+        .tall {
+            grid-row: span 2;
+        }
+
+        /* Tarjeta grande (2x2) */
+        .big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Sync SaaS Branding</h1>
+    </header>
+
+    <main class="gallery">
+        <article class="card big">Card 1</article>
+        <article class="card">Card 2</article>
+        <article class="card">Card 3</article>
+        <article class="card">Card 4</article>
+        <article class="card wide">Card 5</article>
+        <article class="card tall">Card 6</article>
+    </main>
+
+</body>
+
+</html>

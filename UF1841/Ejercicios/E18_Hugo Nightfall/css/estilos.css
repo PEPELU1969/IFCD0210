@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(41, 39, 39);
+    font-family: 'Fira Mono';
+    font-size: 25px;
+}
+
+header {
+    height: 10vh;
+    background-color: black;
+}
+
+.cabecera {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cuerpo {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 39, 39);
+    color: white;
+}
+
+.contenido{
+    text-align: center;
+    flex: 1 auto;
+    display: flex;
+    justify-content: center;
+}
+.cuerpo_about{
+    text-align: left;
+    height: 80vh;
+    width: 60%;  
+    margin: 2rem auto; /* primera medida altura, segunda medida  */
+    background-color: rgb(41, 39, 39);
+    color: white;    
+}
+
+h1 {
+    font-size: 60px;
+}
+
+p{
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    font-family: open sans,sans-serif;
+    font-size: 16px;
+}
+.cuerpo_about ul{
+    padding-left: 3rem;
+    display: list-item;
+    font-size: 16px;
+}
+footer {
+    height: 10vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

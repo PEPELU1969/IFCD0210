@@ -1,0 +1,279 @@
+/* Selector universal: afecta a TODOS los elementos */
+* {
+    /* Hace que padding y borde cuenten dentro del ancho/alto */
+    box-sizing: border-box;
+
+    /* Elimina márgenes por defecto del navegador */
+    margin: 0;
+
+    /* Elimina paddings por defecto del navegador */
+    padding: 0;
+
+    /* Mejora el suavizado de la fuente en Chrome/Safari */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Estilos base del documento */
+html {
+    /* Fuente principal del sitio */
+    font-family: "Fira Mono", monospace;
+
+    /* Texto sin cursiva */
+    font-style: normal;
+
+    /* Grosor normal del texto */
+    font-weight: 400;
+
+    /* Color de fondo general */
+    background-color: #252627;
+}
+
+/* Contenedor principal de la página */
+body {
+    /* Activa Flexbox */
+    display: flex;
+
+    /* Coloca los elementos en columna (vertical) */
+    flex-direction: column;
+
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+
+    /* Color del texto */
+    color: #fff;
+
+    /* Altura igual a la ventana del navegador */
+    height: 100vh;
+}
+
+/* Título principal */
+h1 {
+    /* Tamaño grande del texto */
+    font-size: 3rem;
+
+    /* Margen arriba y abajo */
+    margin: 2rem 0;
+}
+
+/* Enlaces */
+a {
+    /* Color blanco */
+    color: #fff;
+
+    /* Quita el subrayado */
+    text-decoration: none;
+}
+
+/* Contenedor central reutilizable */
+.wrapper {
+    /* Ocupa todo el ancho disponible */
+    width: 100%;
+
+    /* Pero no más de este tamaño */
+    max-width: 50rem;
+
+    /* Centrado horizontal */
+    margin: 0 auto;
+}
+
+/* Padding común para header, main y footer */
+header,
+main,
+footer {
+    padding: 1.25rem 0;
+}
+
+/* Header y footer centrados y con ancho máximo */
+header,
+footer {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+/* Header como contenedor flex */
+header {
+    display: flex;
+
+    /* Separa los elementos a los extremos */
+    justify-content: space-between;
+}
+
+/* Enlaces del header */
+header a {
+    /* Altura de línea */
+    line-height: 1.25;
+
+    /* Texto en negrita */
+    font-weight: 700;
+}
+
+/* Logo con espacio a la izquierda */
+header .logo {
+    padding-left: 1.5rem;
+}
+
+/* Navegación con espacio a la derecha */
+header nav {
+    padding-right: 1.5rem;
+}
+
+/* Lista sin viñetas */
+nav ul {
+    list-style: none;
+}
+
+/* Elementos de lista en línea */
+nav ul li {
+    display: inline;
+}
+
+/* Contenido principal */
+main {
+    width: 100%;
+
+    /* Elimina cualquier límite de ancho */
+    max-width: unset;
+
+    /* Color de fondo distinto */
+    background-color: #292a2d;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+
+    /* Centra el contenido verticalmente */
+    justify-content: center;
+
+    /* Ocupa el espacio sobrante */
+    flex-grow: 1;
+
+    /* Centrado horizontal */
+    margin: 0 auto;
+
+    /* Texto centrado */
+    text-align: center;
+}
+
+/* Secciones dentro del main */
+main section {
+    /* Fuente distinta para el contenido */
+    font-family: 'Open Sans', sans-serif;
+
+    width: 100%;
+    max-width: 50rem;
+
+    /* Texto alineado a la izquierda */
+    text-align: left;
+
+    /* Centrado horizontal */
+    margin: 0 auto;
+
+    /* Padding lateral */
+    padding: 0 1.5rem;
+}
+
+/* Títulos dentro de section */
+main section h1,
+main section h2 {
+    font-family: "Fira Mono", monospace;
+}
+
+/* Tamaño del h1 */
+main section h1 {
+    font-size: 2rem;
+}
+
+/* Tamaño del h2 */
+main section h2 {
+    font-size: 1.25rem;
+}
+
+/* Párrafos y listas */
+main section p,
+main section ul {
+    /* Mejora la legibilidad */
+    line-height: 1.5;
+
+    /* Separación inferior */
+    margin-bottom: 1.5rem;
+}
+
+/* Sangría de listas */
+main section ul {
+    padding-left: 1.5rem;
+}
+
+/* Enlaces dentro del contenido */
+main section a {
+    color: #8bccff;
+}
+
+/* Listas de definición */
+main section dl {
+    font-family: "Fira Mono", monospace;
+    font-weight: 700;
+}
+
+/* Términos y descripciones */
+main section dl dt,
+main section dl dd {
+    line-height: 1.5;
+    padding: .25rem 0;
+}
+
+/* Término alineado a la izquierda */
+main section dl dt {
+    float: left;
+    margin-right: 1rem;
+}
+
+/* Navegación secundaria */
+main nav {
+    margin: 1rem 0;
+}
+
+/* Enlaces del nav del main */
+main nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+
+    /* Permite padding */
+    display: inline-block;
+
+    padding: 0 .5rem;
+}
+
+/* Efecto hover en enlaces */
+main nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    font-family: 'Open Sans', sans-serif;
+    padding: .9375rem 1.5rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+/* Caja reutilizable */
+.plate {
+    background-color: #252627;
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Texto pequeño */
+.minutes {
+    font-size: .875rem;
+}
+
+/* Elemento flotado a la derecha */
+.posted {
+    float: right;
+}
+
+/* Clase utilitaria para quitar margen inferior */
+.mb-0 {
+    margin-bottom: 0;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .grid {
+            border-color: red;
+    display: grid;
+
+    /* 3 columnas iguales */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Altura coherente con el diseño */
+    grid-auto-rows: 230px;
+
+    gap: 1.5rem;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.wide {
+    grid-column: span 2;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+
+    /* Flexbox solo para centrar contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <main class="grid">
+    <article class="card">1</article>
+    <article class="card">2</article>
+    <article class="card">3</article>
+
+    <article class="card wide">4</article>
+    <article class="card">5</article>
+
+    <article class="card">6</article>
+    <article class="card wide">7</article>
+</main>
+
+</body>
+</html>
