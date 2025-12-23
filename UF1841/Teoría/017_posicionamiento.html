@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem; /* no hemos definido tamaño inicial xq por defecto es 16px */
+            min-height: 200vh;
+        }
+        .exterior{
+            border: 3px black dashed; /* dashed borde de puntos */
+            width: 75vw;
+            height: 85vh;
+            margin: 40px auto; /* primer valor arriba y abajo, el segundo izq y drch */
+        }
+        .interior{
+            background-color: aquamarine;
+            border: 2px solid blue;
+            width: 40vw;
+            height: 50vh;
+            margin: 200px auto; /* primer valor arriba y abajo, el segundo izq y drch */
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            color: white;
+            padding: 1rem;
+        }
+        .relativa{
+            background-color: rgb(255, 0, 149);
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+        .absoluta{
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+
+        }
+        .fijo{
+            background-color: brown;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        .sticky{
+            background-color: rgb(51, 47, 47);
+            position: sticky;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="exterior ">
+    <div class="interior relativa">
+
+        <div  class="box absoluta">
+            <p>Absoluto</p>
+        </div>
+        <div class="box relativa">
+            <p>Relativo</p>
+        </div>
+        <div class="box fijo">
+            <p>Fixed</p>
+        </div>
+        <div class="box sticky">
+            <p>Sticky</p>
+        </div>
+
+    </div>
+   </div> 
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .titulo {
+            background-color: aquamarine;
+        }
+
+        .titulo2 {
+            background-color: rgb(103, 151, 94);
+            position: absolute;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 90%;
+            height: 60px;
+            background-color: rgb(77, 77, 145);
+            color: white;
+            z-index: 100;
+        }
+
+        section {
+            padding-top: 70px;
+            height: 50vh;
+            background-color: blueviolet;
+        }
+
+        /* Avatar */
+        .avatar-container{
+            position: relative;
+            width: 80px;
+            height: 80px;
+            
+        }        
+        .avatar-container img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .indicador{
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            width: 18px;
+            height: 18px;
+            background-color: rgb(49, 190, 84);
+            border: 3px solid white;
+            border-radius: 50%;
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="contenedor">
+        <nav class="navbar">Cabecera inmovil
+
+        </nav>
+        <section>
+            <h1 class="titulo">Este es un titulo</h1>
+            <h1 class="titulo2">Este es otro título</h1>
+        </section>
+
+        <!-- Ejemplo de avatar -->
+         <div class="avatar-container">
+            <img src="https://placehold.co/300" alt="Foto de perfil">
+            <span class="indicador">2</span>
+         </div>
+
+
+
+    </main>
+</body>
+
+</html>

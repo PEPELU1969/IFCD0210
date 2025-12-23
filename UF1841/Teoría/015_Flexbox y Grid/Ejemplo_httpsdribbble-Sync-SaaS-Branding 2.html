@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f4f4f4;
+    color: #111;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+.intro {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.grid {
+    display: grid;
+
+    /* 3 columnas iguales */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Altura base de las filas */
+    grid-auto-rows: 220px;
+
+    /* Espacio entre tarjetas */
+    gap: 1.5rem;
+
+    /* Centrado y ancho máximo */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+
+    /* Flexbox solo para centrar contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.wide {
+    grid-column: span 2;
+}
+.footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.875rem;
+}
+
+    </style>
+</head>
+
+    <body>
+
+    <header class="header">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>Sync SaaS Branding</h1>
+        <p>Selected works and explorations</p>
+    </section>
+
+    <!-- GRID DE TARJETAS -->
+    <main class="grid">
+        <article class="card">1</article>
+        <article class="card">2</article>
+        <article class="card">3</article>
+
+        <article class="card wide">4</article>
+        <article class="card">5</article>
+
+        <article class="card">6</article>
+        <article class="card wide">7</article>
+    </main>
+
+    <footer class="footer">
+        © 2025 — Footer content
+    </footer>
+
+</body>
+
+
+</html>

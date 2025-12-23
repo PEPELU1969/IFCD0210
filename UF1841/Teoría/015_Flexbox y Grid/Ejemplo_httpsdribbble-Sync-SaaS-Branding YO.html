@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            background: #f4f4f4;
+            color: #111;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+        }
+
+        .nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: red;
+        }
+
+        .cabecera {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-areas: 
+                "grid-alto"
+                "grid-bajo" ;
+            grid-template-rows: 40% 60%;
+            width: 800px;
+            margin: 0 auto;            
+        }
+
+            .grid-alto {            
+                display: grid;
+                width: 100%;
+                height: 200px;
+                grid-template-areas:
+                    "alto-izq alto-drch";
+                grid-template-columns: 60% 40%;
+            }
+                        .alto-izq{
+                            background-color: chartreuse;
+                        }
+                        .alto-drch{
+                            background-color: chocolate;
+                        }
+
+            .grid-bajo {            
+                display: grid;
+                width: 100%;
+                height: 400px;
+                grid-template-areas:
+                    "bajo-izq bajo-centro bajo-drch";
+                grid-template-columns: 30% 30% 40%;
+            }
+                        .bajo-izq {
+                            background-color: coral;
+                            display: grid;
+                            width: 100%;
+                            grid-template-areas:
+                                "bajo-izq-alto"
+                                "bajo-izq-bajo";
+                            grid-template-rows: 60% 40%;
+                        }
+                                .bajo-izq-alto{
+                                    background-color: darkgray;
+                                }
+                                .bajo-izq-bajo{
+                                    background-color: darkkhaki;
+                                }
+
+                        .bajo-centro{
+                            background-color: cornflowerblue;
+                            display: grid;
+                            width: 100%;
+                            grid-template-areas:
+                                "bajo-centro-alto"
+                                "bajo-centro-bajo";
+                            grid-template-rows: 40% 60%;
+                        }
+                                .bajo-centro-alto{
+                                    background-color: darkmagenta;
+                                }
+                                .bajo-centro-bajo{
+                                    background-color: darkorange;
+                                }
+
+                        .bajo-drch{
+                            background-color: crimson;
+                        }
+                                .bajo-drch-solo{
+                                }
+
+        .footer {
+            text-align: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="cabecera">
+        <h1>Sync SaaS Branding</h1>
+        <p>Selected works and explorations</p>
+    </section>
+
+    <main class="grid">
+
+        <div class="grid-alto">
+            <article class="alto-izq">1</article>
+            <article class="alto-drch">2</article>
+        </div>
+
+        <div class="grid-bajo">
+            <div class="bajo-izq">
+                <article class="bajo-izq-alto">3</article>
+                <article class="bajo-izq-bajo">4</article>
+            </div>
+
+            <div class="bajo-centro">
+                <article class="bajo-centro-alto">5</article>
+                <article class="bajo-centro-bajo">6</article>
+            </div>
+
+            <div class="bajo-drch">
+                <article class="bajo-drch-solo">7</article>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        © 2025 — Footer content
+    </footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+/* Para importar el tipo de letra que utilizan en la web */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reseteamos las propiedades por defecto del navegador */
+* {
+	/* box-sizing: border-box; */
+	padding: 0;
+	margin: 0;
+}
+
+/* Estilos generales del html */
+html,
+body {
+	font-family: 'Raleway', sans-serif;
+	background: #f3f4f6;
+	color: #7a707d;
+	font-size: 16px;
+}
+
+/* Navbar --  barra de navegación */
+.navbar {
+	height: 90px;
+}
+.navbar .logo a {
+	text-decoration: none;
+	color: #7a797d;
+	font-size: 2rem;
+	font-weight: 800;
+}
+.navbar .contenedor {	
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.navbar ul {
+	list-style: none;
+	display: flex;
+}
+.navbar ul li {
+	margin-left: 20px;
+}
+.navbar ul li a {
+	text-decoration: none;
+	color: #7a797d;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+/* portada con foto de fondo y contenedor con nombre y profesión */
+.portada {
+	background-image: url(/images/imagen-de-fond.jpg);
+	background-position: center;
+	background-size: cover;	
+}
+.contenedor-portada {
+	padding-top: 450px;
+}
+.contenedor{ /* consigo centrar los div de: la barra de navegación, el comentario y los trabajos */
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+.comentario{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 30px;
+	text-align: center;
+	background: #f3f4f6;
+	padding: 80px;
+}
+.nombreyprofesion { /* h1 con mi nombre y profesión */
+	font-size: 3rem;
+	color: #000;
+}
+.presento-trabajos {
+	font-size: 20px; /* a continuación te muestro algunos de mis trabajos */ 
+}
+
+/* Muestra de trabajos realizados */
+.contenedor-trabajos{
+	padding: 150px 0;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+img {
+	height: 450px;
+}
+h4 {
+	color: #000;
+	font-size: 1.5rem;
+}
+p {
+	font-size: 1rem;
+	margin: 10px 0;
+}
+.flex {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 50px;
+}
+.flex-box {
+	flex: 1;
+	text-align: center;
+}
+
+/* about */
+.contenedor-about{
+	text-align: left;
+	padding: 150px 0;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.contenedor-about h2{
+	color: #000;
+	font-size: 2rem;
+	padding-bottom: 50px	
+}
+.contenedor-about p{
+	color: #7A707D;
+	font-size: 1rem;
+	margin: 10px 0;
+    line-height: 1.7em;
+    font-weight: 200;
+	padding-bottom: 50px	
+}
+.contenedor-about .flex-about {
+	display: flex;
+	justify-content: space-between;
+}
+.contenedor-about .flex-box3 {
+	flex: 1;
+	/* padding-right: 40px;	 */
+}
+.contenedor-about .flex-box4{
+	flex: 1;	
+}
+img{
+	max-width: 100%;
+}
+
+/* contacto */
+.contenedor-contacto{
+	text-align: left;
+	padding: 200px 0;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.contenedor-contacto h2{
+	color: #000;
+	font-size: 2rem;
+	padding-bottom: 50px
+}
+.contenedor-contacto p {
+	color: #7A707D;
+	font-size: 1rem;
+	margin: 10px 0;
+    line-height: 1.7em;
+    font-weight: 200;		
+}
+.contenedor-contacto a {
+	text-decoration: none;
+	color: #7a797d;
+}
+
+/* Pie de página */
+footer {
+	background: #cccad1;
+	padding: 60px;
+	text-align: center;
+}
+button{
+	background-color: #000;
+	border: none;
+	border-radius: 20%;
+	color: white;
+	width: 130px;
+	height: 20px;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}

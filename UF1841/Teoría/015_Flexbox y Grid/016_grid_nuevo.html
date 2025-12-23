@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            display: grid;
+            /* grid-template-columns: 100px 20% 30% auto; distintas formas de dar valor a la columna */
+            /* grid-template-columns: 100px 1fr 1fr 10%; orde de ejecución unidades fijas px, % y después fr */
+            /* grid-template-columns: 1fr 1fr 1fr; lo recomendable es fraccion */
+            grid-template-columns: repeat(12,1fr); /*podemos usar la función repeat(4,1fr o cualquier medida)*/
+            /* para decir que una columna puede reducir hasta un minimo */
+            /* grid-template-columns: minmax(400px, 2fr);  */
+            grid-template-rows: 200px 300px; /* Lo mismo pero en filas */
+            gap: 5px; /*espacio separador entre filas y columna (5px en vertical y en horizontal) */
+
+        }
+
+        .grid-item{
+            background-color: rgb(173, 173, 231);
+            border: 1px solid red;
+        }
+        .cabecera{
+            background-color: blueviolet;
+             grid-column: 1 / span 3;
+        }
+        .segundo{
+            background-color: aquamarine;
+            grid-row: 1 span 2 ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="grid-item cabecera">Elemento1</div>
+        <div class="grid-item segundo">Elemento2</div>
+        <div class="grid-item">Elemento3</div>
+        <div class="grid-item">Elemento4</div>
+        <div class="grid-item">Elemento5</div>
+        <div class="grid-item">Elemento6</div>
+        <div class="grid-item">Elemento7</div>
+        <div class="grid-item">Elemento7</div>
+    </div>
+
+</body>
+</html>
